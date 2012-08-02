@@ -22,3 +22,7 @@ configre the settings for [vim-quickrun](https://github.com/thinca/vim-quickrun)
 ```
 let g:quickrun_config['markdown'] = { 'command': 'marpet', 'outputter': 'browser', 'exec': ['%c %s'], }
 ```
+
+## LICENSE
+
+© 2012 Kazuma, Muramatsu. This project is licensed under the MIT license. See LICENSE for details.

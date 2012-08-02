@@ -2,7 +2,7 @@
 
 Marpet is convert HTML into Markdown using the redcarpet.
 
-## Download
+## Installation
 
 The Marpet source is available at GitHub:
 
@@ -15,4 +15,10 @@ git clone git://github.com/Kazuma/marpet.git
 ```
 $ marpet input.md                # stdout
 $ marpet input.md > output.html  # write output into HTML
+```
+
+configre the settings for [vim-quickrun](https://github.com/thinca/vim-quickrun). (.vimrc)
+
+```
+let g:quickrun_config['markdown'] = { 'command': 'marpet', 'outputter': 'browser', 'exec': ['%c %s'], }
 ```

@@ -1,23 +1,25 @@
-#!/usr/bin/env ruby
-# encoding: utf-8
-
+require "marpet/version"
 require 'redcarpet/compat'
 
-markdown = Redcarpet::Markdown.new(
-  Redcarpet::Render::HTML,
-  :tables => true,
-  :autolink => true,
-  :superscript => true,
-  :strikethrough => true,
-  :fenced_code_blocks => true,
-)
+module Marpet
+  class Converter
+    def initialize(path)
+      @markdown = Redcarpet::Markdown.new(
+        Redcarpet::Render::HTML,
+        :tables => true,
+        :autolink => true,
+        :superscript => true,
+        :strikethrough => true,
+        :fenced_code_blocks => true,
+      )
+      @path = path
+    end
 
-content = markdown.render(open(ARGV[0]).read)
-
-puts <<"EOS"
-<!DOCTYPE html>
+    def render
+      content = @markdown.render(open(@path).read)
+      "<!DOCTYPE html>
 <head>
-  <meta charset="utf-8">
+  <meta charset='utf-8'>
   <style>
     body {
       background-color: #FFF;
@@ -96,5 +98,7 @@ puts <<"EOS"
 <body>
   #{content}
 </body>
-</html>
-EOS
+</html>"
+    end
+  end
+end

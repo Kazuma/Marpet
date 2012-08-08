@@ -7,7 +7,13 @@ Marpet is convert HTML into Markdown using the redcarpet.
 The Marpet source is available at GitHub:
 
 ```
-git clone git://github.com/Kazuma/marpet.git
+$ git clone git://github.com/Kazuma/marpet.git
+```
+
+Or, [bundlizer](https://github.com/Tomohiro/bundlizer):
+
+```
+$ bundlier install Kazuma/Marpet
 ```
 
 ## Usage

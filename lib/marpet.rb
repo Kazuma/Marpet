@@ -65,33 +65,29 @@ module Marpet
     }
 
     ul ol {
-      padding-left: 30px
+      padding-left: 30px;
     }
 
     p img
-      padding:
-        left: 2em
+      padding-left: 2em;
+    }
 
     table {
-      border: solid 1px #090909;
+      margin: 15px 0;
+      padding: 0;
+      border: 0;
       border-collapse: collapse;
       border-spacing: 0;
-      font-size: 1.2em;
-      margin-left: 1em;
-      color: #FFFFFF;
+      font-size: 100%;
+    }
+
+    table th, table td {
+      padding: 6px 13px;
+      border: solid 1px #CCC;
     }
 
     table th {
-      padding: 3px;
-      border: solid 1px #444444;
-      background: #666666;
-    }
-
-    table td {
-      padding: 5px;
-      border: solid 1px #D9D9D9;
-      border-width: 1px 1px 0 1px;
-      color: #000000;
+      font-weight: bold;
     }
   </style>
 </head>

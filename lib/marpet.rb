@@ -20,7 +20,7 @@ module Marpet
       "<!DOCTYPE html>
 <head>
   <meta charset='utf-8'>
-  <style>
+  <style media='screen'>
     body {
       background-color: #FFF;
       font-size: 14px;
@@ -71,7 +71,8 @@ module Marpet
     p img
       padding-left: 2em;
     }
-
+  </style>
+  <style scoped>
     table {
       margin: 15px 0;
       padding: 0;

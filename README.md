@@ -13,7 +13,7 @@ $ git clone git://github.com/Kazuma/marpet.git
 Or, [bundlizer](https://github.com/Tomohiro/bundlizer):
 
 ```
-$ bundlier install Kazuma/Marpet
+$ bundlizer install Kazuma/Marpet
 ```
 
 ## Usage

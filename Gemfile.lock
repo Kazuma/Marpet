@@ -1,10 +1,18 @@
-GEM
-  remote: http://rubygems.org/
+PATH
+  remote: .
   specs:
+    marpet (0.0.1)
+      coderay
+      redcarpet
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    coderay (1.0.7)
     redcarpet (2.1.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  redcarpet
+  marpet!

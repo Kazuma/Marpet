@@ -1,11 +1,18 @@
-require "marpet/version"
+require 'marpet/version'
 require 'redcarpet/compat'
+require 'coderay'
 
 module Marpet
+  class Coderay < Redcarpet::Render::HTML
+    def block_code(code, language)
+      CodeRay.scan(code, language).div(:line_numbers => false)
+    end
+  end
+
   class Converter
     def initialize(path)
       @markdown = Redcarpet::Markdown.new(
-        Redcarpet::Render::HTML,
+        Coderay.new(:filter_html => true, :hard_wrap => true),
         :tables => true,
         :autolink => true,
         :superscript => true,
@@ -52,7 +59,6 @@ module Marpet
       font-size: 13px;
       background-color: #F8F8F8;
       line-height: 19px;
-      margin: 1em;
       padding: 6px 10px;
       border: solid 1px #CCC;
       border-radius: 3px;

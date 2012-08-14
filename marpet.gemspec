@@ -16,4 +16,5 @@ Gem::Specification.new do |gem|
   gem.version       = Marpet::VERSION
 
   gem.add_runtime_dependency 'redcarpet'
+  gem.add_runtime_dependency 'coderay'
 end

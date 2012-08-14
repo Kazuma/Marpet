@@ -1,14 +1,7 @@
 require 'marpet/version'
-require 'redcarpet/compat'
-require 'coderay'
+require 'marpet/coderay'
 
 module Marpet
-  class Coderay < Redcarpet::Render::HTML
-    def block_code(code, language)
-      CodeRay.scan(code, language).div
-    end
-  end
-
   class Converter
     def initialize(path)
       @markdown = Redcarpet::Markdown.new(

@@ -12,7 +12,7 @@ module Marpet
         :strikethrough => true,
         :fenced_code_blocks => true,
       )
-      @path = path
+      @path = File.expand_path(path)
     end
 
     def render

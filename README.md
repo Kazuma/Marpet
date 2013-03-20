@@ -2,7 +2,7 @@
 
 Marpet is convert HTML into Markdown using the redcarpet.
 
-[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/Kazuma/Marpet) [![endorse](http://api.coderwall.com/kazuma/endorsecount.png)](http://coderwall.com/kazuma)
+[![Code Climate](https://codeclimate.com/github/Kazuma/Marpet.png)](https://codeclimate.com/github/Kazuma/Marpet) [![endorse](http://api.coderwall.com/kazuma/endorsecount.png)](http://coderwall.com/kazuma)
 
 ## Installation
 

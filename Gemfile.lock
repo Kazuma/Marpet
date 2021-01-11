@@ -9,7 +9,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     coderay (1.0.9)
-    redcarpet (3.0.0)
+    redcarpet (3.5.1)
 
 PLATFORMS
   ruby
